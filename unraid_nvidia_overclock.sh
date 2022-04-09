@@ -107,7 +107,7 @@ nvidia-smi -r
 # Enable persistence
 nvidia-smi -pm 1
 # Set power limit (in watts)
-nvidia-smi -pl 109
+nvidia-smi -pl 110
 # Generate /etc/X11/xorg.conf using virtual displays (THIS IS NOT AN OPTIMAL CONFIGURATION... will work on this)
 nvidia-xconfig --cool-bits=31 --allow-empty-initial-configuration --use-display-device=None --virtual=304x200 --enable-all-gpus --separate-x-screens
 # Ideally, create an optimized xorg.conf and copy it. Uncomment the following line to copy optimized configuriation:
@@ -118,8 +118,8 @@ export DISPLAY=:0.0
 xinit /mnt/user/bin/3060/oc.xinitrc -- /usr/bin/X -br
 # oc.xinitrc should contain calls to nvidia-settings. ie:
 #   nvidia-settings -a [gpu:0]/GPUPowerMizerMode=2 --use-gtk2
-#   nvidia-settings -a [gpu:0]/GPUMemoryTransferRateOffsetAllPerformanceLevels=1400 --use-gtk2
+#   nvidia-settings -a [gpu:0]/GPUMemoryTransferRateOffsetAllPerformanceLevels=2500 --use-gtk2
 #   nvidia-settings -a [gpu:0]/GPUGraphicsClockOffsetAllPerformanceLevels=-200 --use-gtk2
 #   nvidia-settings -a [gpu:0]/GPUFanControlState=1 --use-gtk2
-#   nvidia-settings -a [fan:0]/GPUTargetFanSpeed=78 --use-gtk2
-#   nvidia-settings -a [fan:1]/GPUTargetFanSpeed=78 --use-gtk2
+#   nvidia-settings -a [fan:0]/GPUTargetFanSpeed=50 --use-gtk2
+#   nvidia-settings -a [fan:1]/GPUTargetFanSpeed=50 --use-gtk2
