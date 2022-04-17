@@ -1,0 +1,30 @@
+# oc.xinitrc should contain calls to nvidia-settings. ie:
+
+# NVIDIA GeForce GTX 1080 Ti FTW3 Hybrid, 00000000:01:00.0
+# Fan Speed 70% / Power Limit 130w / Core Clock +40 / Memory Clock +800
+# NVIDIA GeForce RTX 3080 FTW3 Ultra, 00000000:02:00.0
+# Fan Speed 70% / Power Limit 220w / Core Clock -200 / Memory Clock +1200
+
+# Set persistance mode https://docs.nvidia.com/deploy/driver-persistence/index.html#persistence-mode
+#nvidia-smi -pm 1
+
+# Reset GPUs
+#nvidia-smi -r # errors due to primary gpu
+
+# Set Power Limit
+#nvidia-smi -i 0 -pl 150
+#nvidia-smi -i 1 -pl 250
+
+#nvidia-settings -a [gpu:0]/GPUPowerMizerMode=1 --use-gtk2
+#nvidia-settings -a [gpu:1]/GPUPowerMizerMode=1 --use-gtk2
+
+#nvidia-settings -a [gpu:0]/GPUMemoryTransferRateOffsetAllPerformanceLevels=800 --use-gtk2
+#nvidia-settings -a [gpu:0]/GPUGraphicsClockOffsetAllPerformanceLevels=+40 --use-gtk2
+
+#nvidia-settings -a [gpu:0]/GPUMemoryTransferRateOffsetAllPerformanceLevels=1200 --use-gtk2
+#nvidia-settings -a [gpu:0]/GPUGraphicsClockOffsetAllPerformanceLevels=-200 --use-gtk2
+
+#nvidia-settings -a [gpu:0]/GPUFanControlState=1 -a [fan:0]/GPUTargetFanSpeed=80 -a [fan:1]/GPUTargetFanSpeed=80 --use-gtk2
+#nvidia-settings -a [gpu:1]/GPUFanControlState=1 -a [fan:0]/GPUTargetFanSpeed=80 --use-gtk2
+
+echo "Edit overclock.xinitrc to make changes"

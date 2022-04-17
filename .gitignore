@@ -1,0 +1,4 @@
+*.tgz
+installs/**
+xorg.conf
+overclock.xinitrc
