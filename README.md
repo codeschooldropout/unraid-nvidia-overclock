@@ -17,13 +17,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Decided to change mining computer into backup / test Unraid NAS but still wanted to mine
-Initially wanted to try GPU passthrough to a VM to avoid nvidia-settings on headless system but that didn't work out
+Decided to change mining computer into backup / test Unraid NAS but still wanted to mine.
+
+Initially wanted to try GPU passthrough to a VM to avoid nvidia-settings on headless system but that didn't work out.
+
 Found and adjusted [unraid-nvidia-overclock.sh](https://gist.github.com/gabrielsond/eea673568c17ff9a4b904cd0eb22760e) to work with Unraid 6.10rc4 test release
 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
