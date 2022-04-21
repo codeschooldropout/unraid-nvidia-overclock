@@ -28,7 +28,7 @@ Found and adjusted [unraid-nvidia-overclock.sh](https://gist.github.com/gabriels
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these steps.
 
 ### Prerequisites
 
